@@ -117,8 +117,8 @@ client.on('message', message => {
 });
 client.on('message', message => {
     if (message.content === prefix + 'reload') {
-    	message.reply('Realoading Bot!');
-        message.reply('Commands Have been Reloaded! enjoy');
+    	message.channel.send('Realoading Bot!');
+        message.channel.send('Commands Have been Reloaded! enjoy');
       message.delete(1000);
   	}
 });
