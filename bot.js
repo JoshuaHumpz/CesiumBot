@@ -3,8 +3,8 @@ const client = new Discord.Client();
 const prefix = '!';  
 
 client.on('ready', () => {
-  console.log(`${client.user.tag} is all set ty for using me @pooofy5415`);
-  client.user.setActivity(`Prefix ! | !help`, { type: "PLAYING", url: "Minecraft" });
+  console.log(`${client.user.tag} is all set.`);
+  client.user.setActivity(`Prefix ! | !help`, { type: "STREAMING", url: "https://www.twitch.tv/twitch" });
 });
 
 var index = 0;
