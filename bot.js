@@ -2,11 +2,6 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = '!';  
 
-client.on('ready', () => {
-  console.log(`${client.user.tag} is all set.`);
-  client.user.setActivity(`Prefix ! | !help`, { type: "STREAMING", url: "https://www.twitch.tv/twitch" });
-});
-
 var index = 0;
 var index2 = 0;
 var index3 = 0;
