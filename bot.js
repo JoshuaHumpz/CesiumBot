@@ -2,9 +2,12 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = '!';  
 
-bot.on('ready', () => {
-  console.log(`${bot.user.tag} is all set ty for using me @pooofy5415`);
-  bot.user.setActivity(`Prefix ! | !help`, { type: "PLAYING", url: "Minecraft" });
+client.on('ready', () => {
+
+  console.log(`${client.user.tag} is all set ty for using me @pooofy5415`);
+
+  client.user.setActivity(`Prefix ! | !help`, { type: "PLAYING", url: "Minecraft" });
+
 });
 
 var index = 0;
