@@ -54,7 +54,7 @@ client.on('message', message => {
            .setTitle("Help")
            .setColor("#0e5293")
            .setDescription("```Ban``` **Bans a person!** ```Kick``` **Kicks a Person!**\n```Say``` **Say something that Cesium will also say!**\n ```Agree``` **You will regret it!**")
-           .setFooter("Cesium Bot and Coded by Dwight(Poof)")
+           .setFooter("Cesium Bot is owned and Coded by Dwight(Poof)")
       message.channel.send({embed});
     }
 });
