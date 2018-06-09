@@ -1,9 +1,4 @@
 const Discord = require('discord.js');
-const fs = require('fs');
-const Enmap = require('enmap');
-const EnmapLevel = require('enmap-level');
-//const EnmapSQLite = require('enmap-sqlite');
-
 const client = new Discord.Client({
     disableEveryone: true,
     fetchAllMembers: true
