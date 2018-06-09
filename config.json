@@ -1,0 +1,47 @@
+{
+    "magicballanswers": ["It is certain", "It is decidedly so", "Without a doubt",
+                    "Yes, definitely", "You may rely on it", "As I see it, yes", "Most likely",
+                    "Outlook good", "Yes", "Signs point to yes", "Reply hazy try again",
+                    "Ask again later", "Better not tell you now", "Cannot predict now",
+                    "Concentrate and ask again", "Don't count on it", "My reply is no",
+                    "My sources say no", "Outlook not so good", "Very doubtful"],
+    "defaultSettings": {
+        "prefix": "e!",
+        "modlog": "none",
+        "amtmodlogs": 0,
+        "disabledCommands": [],
+        "welcMsg": "",
+        "welcChan": "",
+        "leaveMsg": "",
+        "leaveChan": "",
+        "muteroleID": "",
+        "banmessage": "",
+        "banmessagechannel": "",
+        "autoname": ""
+    },
+
+    "loggingBools": {
+        "banLogDisabled": false,
+        "muteLogDisabled": false,
+        "kickLogDisabled": false,
+        "hackbanLogDisabled": false,
+        "unbanLogDisabled": false,
+        "unmuteLogDisabled": false,
+        "softbanLogDisabled": false
+    },
+
+    "disablableCommands": ["lenny", "8ball", "choose", "clear", "ban", "kick", "hackban",
+         "unban", "tag list", "role add", "role remove", "ben", "avatar", "quote", "info user",
+        "info server", "info role", "info bot", "info channels", "info roles", "setnick", "urban"],
+
+    "mutetimeformats": ["y", "w", "d", "h", "m", "s", "year", "years", "yrs",
+       "yr", "weeks", "week", "days", "day", "hours", "hour", "hrs", "hr",
+       "h", "minutes", "minute", "mins", "min", "seconds", "second", "secs",
+       "sec"],
+
+    "tags": {
+        
+    },
+
+    "devID": "445633045253324810"
+}

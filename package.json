@@ -1,0 +1,29 @@
+{
+  "name": "Eagle Eye",
+  "version": "1.0.0",
+  "description": "A very comples discord bot created for moderations purposes",
+  "main": "bot.js",
+  "dependencies": {
+    "chalk": "^2.3.2",
+    "cheerio": "^1.0.0-rc.2",
+    "dateformat": "^3.0.3",
+    "discord.js": "^11.3.2",
+    "enmap": "^2.1.1",
+    "enmap-level": "^2.1.0",
+    "lodash": "^4.17.10",
+    "moment": "^2.22.1",
+    "moment-precise-range-plugin": "^1.3.0",
+    "ms": "^2.1.1",
+    "ordinal": "^1.0.2",
+    "paginate-array": "^2.0.0",
+    "snekfetch": "^4.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bot.js"
+  },
+  "keywords": [],
+  "author": "Pooofy",
+  "license": "MIT"
+}
