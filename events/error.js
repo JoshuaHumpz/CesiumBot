@@ -1,0 +1,1 @@
+module.exports = async (client, error) => client.logging.logError(error.stack);
