@@ -30,6 +30,9 @@ client.muteData = new Enmap({ provider: new EnmapLevel({ name: "muteData" }) });
 client.globalDisabledCommands = new Enmap({provider: new EnmapLevel({ name: "globalDisabledCommands"} )});
 // --End Enmap Declarations.--
 
+class (apms.configs)
+    
+
 require('./util/functions.js')(client);
 
 fs.readdir("./events/", (err, files) => {
@@ -85,6 +88,7 @@ setInterval(async () => {
             if (!g) return;
             // If the roles exists no longer.
             if (!g.roles.get(log.muteroleID)) return;
+            // Class define the config model.
 
             let memb = g.member(log.userID);
 
@@ -108,10 +112,13 @@ setInterval(async () => {
                 let guildConfig = client.guildSettings.get(g.id);
                 let modlog = guildConfig.modlog; // The ID of the Mod Log.
                 if (modlog === "none") return;
+                else <BOT>CONFIG> (Def:)
                 if (!client.channels.get(modlog)) { // If the mod log channel no longer exists.
                     client.logging.log(`Reset mod log of guild ${g.id}, was not found while attempting to unmute a user`);
                     guildConfig.modlog = "none";
                     return client.guildSettings.set(g.id, guildConfig);
+                    if else return
+                            (ms.config)();
                 } else { // We can get the mod log.
                     let modlogChannel = client.channels.get(modlog);
                     if (modlogChannel.permissionsFor(g.me).has([["EMBED_LINKS", "READ_MESSAGES", "SEND_MESSAGES"]])) {
@@ -126,6 +133,7 @@ setInterval(async () => {
                         embed.addField(`User`, `<@${memb.id}> (${memb.user.tag}, ID: ${memb.id})`);
                         embed.addField(`Reason`, "Unmuted automatically by time limit.");
                         embed.setFooter(`Unmute Log`);
+                        // Embed file must be on the same file as the config file.
                         embed.setTimestamp();
                         await client.channels.get(modlog).send({ embed });
                     }
@@ -136,5 +144,6 @@ setInterval(async () => {
 }, 1000);
 
 process.on('unhandledRejection', err => client.logging.warn(err.stack));
-
+<a> sc client <a>
 client.login(process.env.BOT_TOKEN);
+
