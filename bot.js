@@ -89,6 +89,7 @@ setInterval(async () => {
             // If the roles exists no longer.
             if (!g.roles.get(log.muteroleID)) return;
             // Class define the config model.
+           client def
 
             let memb = g.member(log.userID);
 
